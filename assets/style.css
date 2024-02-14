@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: #612406;
 }
 
 nav {
@@ -20,6 +21,33 @@ nav {
 
 nav .btn {
     padding: 1rem;
+}
+
+article {
+    background-color: #fbf7e3;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 30px;
+}
+
+article div {
+    padding: 1rem;
+}
+
+article img {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 576px) {
+    article {
+        flex-direction: row-reverse;
+    }
+
+    article img {
+        max-width: 50%;
+    }
 }
 
 .shop {
@@ -50,8 +78,7 @@ nav .btn {
 
 .card img {
     width: 100%;
-    border-top-right-radius: 25%;
-    border-top-left-radius: 25%;
+    object-fit: contain;
 }
 
 .card-details {
